@@ -3,10 +3,18 @@ import './LandingPage.css';
 import { Button, Card, Typography } from 'antd';
 import { CaretRightFilled, SmileTwoTone } from '@ant-design/icons';
 import { MainLayout } from '../../layouts/MainLayout';
+import { useNavigate } from 'react-router-dom';
+import { routePaths } from '../../constants/routes';
 
 const { Title } = Typography;
 
 export const LandingPage: FunctionComponent = () => {
+    const navigate = useNavigate();
+
+    const navigateToHome = () => {
+        navigate(routePaths.home);
+    };
+
     return (
         <MainLayout>
             <section className="max-w-[800px] text-center mx-auto pt-16 px-4">
@@ -24,6 +32,7 @@ export const LandingPage: FunctionComponent = () => {
                     type="primary"
                     className="!w-[80px] !h-[80px] !m-8"
                     icon={<CaretRightFilled className="!text-[35px]" />}
+                    onClick={navigateToHome}
                 >
                 </Button>
             </section>
@@ -31,7 +40,8 @@ export const LandingPage: FunctionComponent = () => {
                 className="max-w-[800px] text-center mx-auto px-4 pt-4 pb-4"
             >
                 <Title level={2}>
-                    Just look what our game will bring to <span className="hmo-accented-text">you!</span>
+                    Just look what our game will bring
+                    to <span className="hmo-accented-text">you!</span>
                 </Title>
                 <div className="landing-grid">
                     <Card
