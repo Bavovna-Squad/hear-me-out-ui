@@ -9,17 +9,10 @@ const { Title } = Typography;
 export const LandingPage: FunctionComponent = () => {
     return (
         <MainLayout>
-            <section
-                style={{
-                    margin: '0 auto',
-                    maxWidth: '800px',
-                    textAlign: 'center',
-                    padding: '5em 1em 1em 1em'
-                }}
-            >
+            <section className="max-w-[800px] text-center mx-auto pt-16 px-4">
                 <Title>
                     Don't know what to do? <br />
-                    Try to <span className="sexy-style">guess a song</span>
+                    Try to <span className="hmo-accented-text">guess a song</span>
                 </Title>
                 <Title level={5}>
                     Hear Me Out is a mini-game, that brings fun and cool experience to you,
@@ -29,38 +22,22 @@ export const LandingPage: FunctionComponent = () => {
                     size="large"
                     shape="circle"
                     type="primary"
-                    icon={<CaretRightFilled style={{ fontSize: '35px' }} />}
-                    style={{
-                        width: '80px',
-                        height: '80px',
-                        margin: '2em'
-                    }}
+                    className="!w-[80px] !h-[80px] !m-8"
+                    icon={<CaretRightFilled className="!text-[35px]" />}
                 >
                 </Button>
             </section>
             <section
-                style={{
-                    margin: '0 auto',
-                    maxWidth: '800px',
-                    textAlign: 'center',
-                    padding: '0em 1em 1em 1em'
-                }}
+                className="max-w-[800px] text-center mx-auto px-4 pt-4 pb-4"
             >
                 <Title level={2}>
-                    Just look what our game will bring to <span className="sexy-style">you!</span>
+                    Just look what our game will bring to <span className="hmo-accented-text">you!</span>
                 </Title>
                 <div className="landing-grid">
                     <Card
                         title={
-                            <div
-                                style={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    gap: '0.5em'
-                                }}
-                            >
-                                <SmileTwoTone style={{ fontSize: '2em' }} />
+                            <div className="flex items-center justify-center gap-2">
+                                <SmileTwoTone className="text-[2rem]" />
                                 <Typography>Fun</Typography>
                             </div>
                         }
@@ -71,15 +48,8 @@ export const LandingPage: FunctionComponent = () => {
                     </Card>
                     <Card
                         title={
-                            <div
-                                style={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    gap: '0.5em'
-                                }}
-                            >
-                                <SmileTwoTone style={{ fontSize: '2em' }} />
+                            <div className="flex items-center justify-center gap-2">
+                                <SmileTwoTone className="text-[2rem]" />
                                 <Typography>Fun</Typography>
                             </div>
                         }
@@ -90,15 +60,8 @@ export const LandingPage: FunctionComponent = () => {
                     </Card>
                     <Card
                         title={
-                            <div
-                                style={{
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    gap: '0.5em'
-                                }}
-                            >
-                                <SmileTwoTone style={{ fontSize: '2em' }} />
+                            <div className="flex items-center justify-center gap-2">
+                                <SmileTwoTone className="text-[2rem]" />
                                 <Typography>Fun</Typography>
                             </div>
                         }

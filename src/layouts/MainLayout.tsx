@@ -23,10 +23,10 @@ export const MainLayout: FunctionComponent<MainLayoutProps> = ({ children }) => 
                     type="text"
                     size="large"
                     onClick={navigateToRoot}
-                    style={{ textTransform: 'uppercase' }}
+                    className="uppercase"
                 >
-                    <Typography style={{ fontWeight: 'bold' }}>
-                        Hear Me <span className="sexy-style">Out</span>
+                    <Typography className="font-bold">
+                        Hear Me <span className="hmo-accented-text">Out</span>
                     </Typography>
                 </Button>
             </Header>
