@@ -1,6 +1,7 @@
 import React, { FunctionComponent, ReactNode } from 'react';
 import { Button, Layout, Typography } from 'antd';
 import { useNavigate } from 'react-router-dom';
+import { routePaths } from '../constants/routes';
 
 const { Header, Content } = Layout;
 
@@ -12,7 +13,7 @@ export const MainLayout: FunctionComponent<MainLayoutProps> = ({ children }) => 
     const navigate = useNavigate();
 
     const navigateToRoot = () => {
-        navigate('/');
+        navigate(routePaths.root);
     };
 
     return (
