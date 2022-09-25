@@ -2,12 +2,13 @@ import React, { FunctionComponent } from 'react';
 import './LandingPage.css';
 import { Button, Card, Typography } from 'antd';
 import { CaretRightFilled, SmileTwoTone } from '@ant-design/icons';
+import { MainLayout } from '../../layouts/MainLayout';
 
 const { Title } = Typography;
 
 export const LandingPage: FunctionComponent = () => {
     return (
-        <>
+        <MainLayout>
             <section
                 style={{
                     margin: '0 auto',
@@ -108,6 +109,6 @@ export const LandingPage: FunctionComponent = () => {
                     </Card>
                 </div>
             </section>
-        </>
+        </MainLayout>
     );
 };
