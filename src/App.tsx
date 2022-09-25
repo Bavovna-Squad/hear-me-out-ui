@@ -3,6 +3,7 @@ import { Button } from 'antd';
 import { Typography } from 'antd';
 import { CaretRightFilled, SmileTwoTone } from '@ant-design/icons';
 import React, { FunctionComponent } from 'react';
+import './App.css';
 
 const { Header, Content } = Layout;
 const { Title } = Typography;
@@ -58,14 +59,7 @@ export const App: FunctionComponent = () => {
                     <Title level={2}>
                         Just look what our game will bring to <span className="sexy-style">you!</span>
                     </Title>
-                    <div
-                        style={{
-                            marginTop: '2em',
-                            display: 'grid',
-                            gridTemplateColumns: 'repeat(3, 1fr)',
-                            gap: '1.5em'
-                        }}
-                    >
+                    <div className="landing-grid">
                         <Card
                             title={
                                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5em' }}>
