@@ -11,3 +11,19 @@ img {
 .hmo-accented-text {
     color: @blue-6;
 }
+
+.hmo-ant-radio-inner {
+    width: 32px;
+    height: 32px;
+}
+
+.hmo-ant-radio-checked .hmo-ant-radio-inner::after {
+    transform: scale(0.65);
+}
+
+.hmo-ant-radio-inner::after {
+    width: 32px;
+    height: 32px;
+    margin-top: -16px; // half of width and height
+    margin-left: -16px; // half of width and height
+}
