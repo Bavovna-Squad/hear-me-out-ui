@@ -37,7 +37,7 @@ export const LandingPage: FunctionComponent = () => {
                 </Button>
             </section>
             <section
-                className="max-w-[800px] text-center mx-auto px-4 pt-4 pb-4"
+                className="max-w-[800px] text-center mx-auto px-4 pt-4 pb-8"
             >
                 <Title level={2}>
                     Just look what our game will bring

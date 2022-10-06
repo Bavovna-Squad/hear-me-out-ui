@@ -3,7 +3,7 @@ import { Button, Layout, Typography } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { routePaths } from '../constants/routes';
 
-const { Header, Content } = Layout;
+const { Header, Content, Footer } = Layout;
 
 type MainLayoutProps = {
     children: ReactNode
@@ -17,7 +17,7 @@ export const MainLayout: FunctionComponent<MainLayoutProps> = ({ children }) => 
     };
 
     return (
-        <Layout>
+        <Layout className="grid grid-rows-[auto 1fr auto] !min-h-full">
             <Header style={{ textAlign: 'center' }}>
                 <Button
                     type="text"
@@ -33,6 +33,9 @@ export const MainLayout: FunctionComponent<MainLayoutProps> = ({ children }) => 
             <Content>
                 {children}
             </Content>
+            <Footer className="text-center">
+                Hear Me Out ©2022 Created by Bavovna Squad
+            </Footer>
         </Layout>
     );
 };
