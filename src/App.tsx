@@ -4,11 +4,12 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { LandingPage } from './pages/design/landing/LandingPage';
 import { routePaths } from './constants/routes';
 import { HomeEmptyPage } from './pages/design/home/HomeEmptyPage';
+import { DesignTableOfContents } from './pages/DesignTableOfContents';
 
 const router = createBrowserRouter([
     {
         path: routePaths.root,
-        element: <LandingPage />
+        element: <DesignTableOfContents />
     },
     {
         path: routePaths.landingAlternative,
