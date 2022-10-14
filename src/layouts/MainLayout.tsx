@@ -1,7 +1,8 @@
 import React, { FunctionComponent, ReactNode } from 'react';
-import { Button, Layout, Typography } from 'antd';
+import { Avatar, Button, Layout, Tooltip, Typography } from 'antd';
 import { useNavigate } from 'react-router-dom';
 import { routePaths } from '../constants/routes';
+import { PlusOutlined, SearchOutlined } from '@ant-design/icons';
 
 const { Header, Content, Footer } = Layout;
 
@@ -18,17 +19,26 @@ export const MainLayout: FunctionComponent<MainLayoutProps> = ({ children }) => 
 
     return (
         <Layout className="grid grid-rows-[auto 1fr auto] !min-h-full">
-            <Header style={{ textAlign: 'center' }}>
+            <Header className="grid grid-cols-2 md:grid-cols-3 place-items-center !px-4">
                 <Button
                     type="text"
                     size="large"
                     onClick={navigateToRoot}
-                    className="uppercase"
+                    className="justify-self-start md:justify-self-center md:col-start-2 uppercase"
                 >
                     <Typography className="font-bold">
                         Hear Me <span className="hmo-accented-text">Out</span>
                     </Typography>
                 </Button>
+                <div className="flex gap-3 justify-self-end pr-2">
+                    <Tooltip title="search">
+                        <Button shape="circle" icon={<SearchOutlined />} />
+                    </Tooltip>
+                    <Tooltip title="create">
+                        <Button shape="circle" icon={<PlusOutlined />} />
+                    </Tooltip>
+                    <Avatar gap={4} className="!bg-emerald-500">U</Avatar>
+                </div>
             </Header>
             <Content>
                 {children}
