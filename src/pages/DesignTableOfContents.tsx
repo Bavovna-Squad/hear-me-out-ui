@@ -34,7 +34,11 @@ export const DesignTableOfContents: FunctionComponent = () => {
             <Link to="/landing">Landing</Link>,
             'landing',
             <LinkOutlined />),
-        getItem('Home', 'home', <MenuUnfoldOutlined />, homePageMenuItems)
+        getItem('Home', 'home', <MenuUnfoldOutlined />, homePageMenuItems),
+        getItem(
+            <Link to="/not-found-page">Not Found Page</Link>,
+            'not-found-page',
+            <LinkOutlined />)
     ] as MenuItem[];
 
     return (

@@ -5,11 +5,12 @@ import { LandingPage } from './pages/design/landing/LandingPage';
 import { routePaths } from './constants/routes';
 import { HomeEmptyPage } from './pages/design/home/HomeEmptyPage';
 import { DesignTableOfContents } from './pages/DesignTableOfContents';
+import { NotFoundPage } from './pages/design/not-found/NotFoundPage';
 
 const router = createBrowserRouter([
     {
         path: routePaths.root,
-        element: <DesignTableOfContents />
+        element: <DesignTableOfContents />,
     },
     {
         path: routePaths.landingAlternative,
@@ -18,13 +19,21 @@ const router = createBrowserRouter([
     {
         path: '/home-empty',
         element: <HomeEmptyPage />
+    },
+    {
+        path: '/not-found-page',
+        element: <NotFoundPage />
+    },
+    {
+        path: '*',
+        element: <NotFoundPage />
     }
 ]);
 
 export const App: FunctionComponent = () => {
     return (
         <RecoilRoot>
-            <RouterProvider router={router} />
+            <RouterProvider router={router} fallbackElement={<NotFoundPage />} />
         </RecoilRoot>
     );
 };
