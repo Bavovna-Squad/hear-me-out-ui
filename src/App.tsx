@@ -14,19 +14,19 @@ const router = createBrowserRouter([
         element: <DesignTableOfContents />,
     },
     {
-        path: routePaths.landingAlternative,
+        path: '/design-landing',
         element: <LandingPage />
     },
     {
-        path: '/home-empty',
+        path: '/design-home-empty',
         element: <HomeEmptyPage />
     },
     {
-        path: '/home-full',
+        path: '/design-home-full',
         element: <HomeFullPage />
     },
     {
-        path: '/not-found-page',
+        path: '/design-not-found-page',
         element: <NotFoundPage />
     },
     {

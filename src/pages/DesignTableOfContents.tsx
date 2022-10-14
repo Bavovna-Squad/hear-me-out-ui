@@ -24,23 +24,23 @@ function getItem(
 export const DesignTableOfContents: FunctionComponent = () => {
     const homePageMenuItems = [
         getItem(
-            <Link to="/home-empty">Home Empty</Link>,
+            <Link to="/design-home-empty">Home Empty</Link>,
             'home-empty',
             <LinkOutlined />),
         getItem(
-            <Link to="/home-full">Home Full</Link>,
+            <Link to="/design-home-full">Home Full</Link>,
             'home-full',
             <LinkOutlined />)
     ];
 
     const menuItems = [
         getItem(
-            <Link to="/landing">Landing</Link>,
+            <Link to="/design-landing">Landing</Link>,
             'landing',
             <LinkOutlined />),
         getItem('Home', 'home', <MenuUnfoldOutlined />, homePageMenuItems),
         getItem(
-            <Link to="/not-found-page">Not Found Page</Link>,
+            <Link to="/design-not-found-page">Not Found Page</Link>,
             'not-found-page',
             <LinkOutlined />)
     ] as MenuItem[];
