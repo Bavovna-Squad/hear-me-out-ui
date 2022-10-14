@@ -1,11 +1,11 @@
 import React, { FunctionComponent } from 'react';
 import { Typography, Empty, Button, Tooltip } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
-import { MainLayout } from '../../layouts/MainLayout';
+import { MainLayout } from '../../../layouts/MainLayout';
 
 const { Title } = Typography;
 
-export const HomePage: FunctionComponent = () => {
+export const HomeEmptyPage: FunctionComponent = () => {
     return (
         <MainLayout>
             <section className="container flex flex-col gap-8 pt-12 pb-4 mx-auto">

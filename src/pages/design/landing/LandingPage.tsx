@@ -2,9 +2,9 @@ import React, { FunctionComponent } from 'react';
 import './LandingPage.css';
 import { Button, Card, Typography } from 'antd';
 import { CaretRightFilled, SmileTwoTone } from '@ant-design/icons';
-import { MainLayout } from '../../layouts/MainLayout';
+import { MainLayout } from '../../../layouts/MainLayout';
 import { useNavigate } from 'react-router-dom';
-import { routePaths } from '../../constants/routes';
+import { routePaths } from '../../../constants/routes';
 
 const { Title } = Typography;
 

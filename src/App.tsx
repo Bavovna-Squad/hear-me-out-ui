@@ -1,9 +1,9 @@
 import React, { FunctionComponent } from 'react';
 import { RecoilRoot } from 'recoil';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { LandingPage } from './pages/LandingPage';
+import { LandingPage } from './pages/design/landing/LandingPage';
 import { routePaths } from './constants/routes';
-import { HomePage } from './pages/HomePage';
+import { HomeEmptyPage } from './pages/design/home/HomeEmptyPage';
 
 const router = createBrowserRouter([
     {
@@ -15,8 +15,8 @@ const router = createBrowserRouter([
         element: <LandingPage />
     },
     {
-        path: routePaths.home,
-        element: <HomePage />
+        path: '/home-empty',
+        element: <HomeEmptyPage />
     }
 ]);
 
