@@ -26,6 +26,10 @@ export const DesignTableOfContents: FunctionComponent = () => {
         getItem(
             <Link to="/home-empty">Home Empty</Link>,
             'home-empty',
+            <LinkOutlined />),
+        getItem(
+            <Link to="/home-full">Home Full</Link>,
+            'home-full',
             <LinkOutlined />)
     ];
 

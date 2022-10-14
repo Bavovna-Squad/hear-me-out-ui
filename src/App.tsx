@@ -1,10 +1,11 @@
 import React, { FunctionComponent } from 'react';
 import { RecoilRoot } from 'recoil';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { LandingPage } from './pages/design/landing/LandingPage';
 import { routePaths } from './constants/routes';
-import { HomeEmptyPage } from './pages/design/home/HomeEmptyPage';
 import { DesignTableOfContents } from './pages/DesignTableOfContents';
+import { LandingPage } from './pages/design/landing/LandingPage';
+import { HomeEmptyPage } from './pages/design/home/HomeEmptyPage';
+import { HomeFullPage } from './pages/design/home/HomeFullPage';
 import { NotFoundPage } from './pages/design/not-found/NotFoundPage';
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     {
         path: '/home-empty',
         element: <HomeEmptyPage />
+    },
+    {
+        path: '/home-full',
+        element: <HomeFullPage />
     },
     {
         path: '/not-found-page',
