@@ -3,6 +3,7 @@ import { RecoilRoot } from 'recoil';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { routePaths } from './constants/routes';
 import { DesignTableOfContents } from './pages/DesignTableOfContents';
+import { ChallengePage } from './pages/design/challenge/ChallengePage';
 import { LandingPage } from './pages/design/landing/LandingPage';
 import { HomeEmptyPage } from './pages/design/home/HomeEmptyPage';
 import { HomeFullPage } from './pages/design/home/HomeFullPage';
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
     {
         path: routePaths.root,
         element: <DesignTableOfContents />,
+    },
+    {
+        path: '/design-challenge',
+        element: <ChallengePage />
     },
     {
         path: '/design-landing',

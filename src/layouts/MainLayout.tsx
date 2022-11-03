@@ -19,7 +19,7 @@ export const MainLayout: FunctionComponent<MainLayoutProps> = ({ children }) => 
 
     return (
         <Layout className="grid grid-rows-[auto 1fr auto] !min-h-full">
-            <Header className="grid grid-cols-2 md:grid-cols-3 place-items-center !px-4">
+            <Header className="grid grid-cols-2 md:grid-cols-3 place-items-center z-10 !px-4">
                 <Button
                     type="text"
                     size="large"
