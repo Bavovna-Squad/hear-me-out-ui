@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import { MainLayout } from '../../../layouts/MainLayout';
-import { Avatar, Card, Divider, List, Tag } from 'antd';
+import { Avatar, Card, Divider, List, Statistic, Tag } from 'antd';
 import {
     DeleteOutlined,
     EllipsisOutlined,
@@ -35,7 +35,7 @@ export const ChallengePage: FunctionComponent = () => {
 
     return (
         <MainLayout>
-            <section className="flex flex-col gap-6">
+            <section className="flex flex-col px-4 gap-6">
                 <div className="relative flex justify-center align-center">
                     <div className="max-w-[500px] py-4 my-4 mx-auto relative z-10">
                         <Card
@@ -51,15 +51,21 @@ export const ChallengePage: FunctionComponent = () => {
                                 description="Created by ..."
                             />
                             <Divider />
+                            <div className="flex justify-around flex-col gap-2 sm:flex-row sm:gap-0">
+                                <Statistic title="Total songs" value={60} />
+                                <Statistic title="Total authors" value={20} />
+                                <Statistic title="Attempts" value="5 per day" />
+                            </div>
+                            <Divider />
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad beatae
                             dolorum ducimus fuga harum id ipsam maxime molestias natus placeat
                             <Divider />
                             <div className="flex flex-wrap gap-2">
-                                <Tag color="lime">property</Tag>
-                                <Tag color="red">property</Tag>
-                                <Tag color="cyan">property</Tag>
-                                <Tag color="gold">property</Tag>
-                                <Tag color="geekblue">property</Tag>
+                                <Tag color="lime">Rock</Tag>
+                                <Tag color="red">Metal</Tag>
+                                <Tag color="cyan">Metalcore</Tag>
+                                <Tag color="gold">Hard rock</Tag>
+                                <Tag color="geekblue">Ambient</Tag>
                             </div>
                         </Card>
                     </div>

@@ -14,11 +14,11 @@ export const HomeFullPage: FunctionComponent = () => {
                     Hello, <span className="hmo-accented-text">FirstName LastName!</span> Ready to
                     guess?
                 </Title>
-                <section className="grid place-items-center grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3">
+                <section className="grid place-items-center grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3 gap-4">
                     {Array.from({ length: 8 }).map(() => {
                         return (
                             <Card
-                                style={{ width: 300, marginTop: 16 }}
+                                className="w-[300px]"
                                 actions={[
                                     <PlayCircleOutlined key="play" />,
                                     <DeleteOutlined key="delete" />,
