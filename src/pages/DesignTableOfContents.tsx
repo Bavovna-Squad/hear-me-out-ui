@@ -44,6 +44,10 @@ export const DesignTableOfContents: FunctionComponent = () => {
             'challenge-page',
             <LinkOutlined />),
         getItem(
+            <Link to="/design-new-challenge">New Challenge Page</Link>,
+            'new-challenge-page',
+            <LinkOutlined />),
+        getItem(
             <Link to="/design-not-found-page">Not Found Page</Link>,
             'not-found-page',
             <LinkOutlined />)

@@ -4,7 +4,7 @@ import { Avatar, Card, Divider, List, Statistic, Tag } from 'antd';
 import {
     DeleteOutlined,
     EllipsisOutlined,
-    PlayCircleOutlined,
+    PlayCircleOutlined
 } from '@ant-design/icons';
 
 const { Meta } = Card;
@@ -30,7 +30,7 @@ export const ChallengePage: FunctionComponent = () => {
         {
             author: 'Song Author',
             title: 'Song Title'
-        },
+        }
     ];
 
     return (

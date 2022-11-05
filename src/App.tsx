@@ -8,6 +8,7 @@ import { LandingPage } from './pages/design/landing/LandingPage';
 import { HomeEmptyPage } from './pages/design/home/HomeEmptyPage';
 import { HomeFullPage } from './pages/design/home/HomeFullPage';
 import { NotFoundPage } from './pages/design/not-found/NotFoundPage';
+import { NewChallengePage } from './pages/design/challenge/NewChallengePage';
 
 const router = createBrowserRouter([
     {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
     {
         path: '/design-challenge',
         element: <ChallengePage />
+    },
+    {
+        path: '/design-new-challenge',
+        element: <NewChallengePage />
     },
     {
         path: '/design-landing',
